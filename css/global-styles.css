@@ -14,10 +14,13 @@
 
 :root {
     --black: #110B11;
-    --main-nav-links: #76FF7A;
-    --grey: #E6E8E6;
+    --green: #76FF7A;
+    --green-darker: #0BDA51;
     --cinzel: cinzel_bold, serif;
     --gothic: didact_gothic, sans-serif;
+    --yellow-link: #FDFF00;
+    --yellow-link-darker: #F8DE7E;
+    --black-link-lighter: #343434;
     --light-link: #D6EDFF;
     --light-link-darker: #BCC4DB;
 }
@@ -33,13 +36,36 @@ body {
 #custom nav.main-nav {
     background-color: var(--black) !important;
     font-family: var(--cinzel);
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-nav.main-nav .my-nav-links a {
+#custom nav.main-nav .my-nav-links a {
     font-variant: small-caps;
     text-align: center;
-    color: var(--main-nav-links) !important;
+    color: var(--green);
     font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#custom nav.main-nav .my-nav-links a.right-border:after {
+    content:""; 
+    background-color: #fff; 
+    position: absolute; 
+    top: 20%;
+    right: 0;
+    height: 60%; 
+    width: 1px;
+}
+
+#custom nav.main-nav .my-nav-links a:hover, nav.main-nav .my-nav-links a:focus {
+    background-color: var(--black-link-lighter);
+}
+
+#custom nav.main-nav .my-nav-links a.active {
+    color: var(--yellow-link);
+    pointer-events: none;
 }
 
 #custom .my-link-light {
@@ -50,4 +76,26 @@ nav.main-nav .my-nav-links a {
 #custom .my-link-light:focus, #custom .my-link-light:hover {
     color: var(--light-link-darker);
     text-decoration: none;
+}
+
+.my-footer {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #fff;
+    padding: 1.2rem 0;
+}
+
+#custom .my-footer .social-media-links a {
+    color: var(--green);
+    font-size: 2rem;
+}
+
+#custom .my-footer .social-media-links a:hover, #custom .my-footer .social-media-links a:focus {
+    color: var(--green-darker);
+}
+
+#custom .my-footer .copyright-clause {
+    color: var(--green);
+    font-size: 1rem;
+    display: block;
 }
