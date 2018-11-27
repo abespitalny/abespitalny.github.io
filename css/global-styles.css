@@ -1,0 +1,39 @@
+@font-face {
+    font-family: didact_gothic;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../Didact_Gothic/DidactGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: cinzel_bold;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../Cinzel/Cinzel-Bold.ttf)
+}
+
+:root {
+    --black: #110B11;
+    --main-nav-links: #76FF7A;
+    --grey: #E6E8E6;
+    --cinzel: cinzel_bold, serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+#custom .my-font {
+    font-family: var(--cinzel);
+}
+
+nav.main-nav {
+    background-color: var(--black) !important;
+}
+
+nav.main-nav .my-nav-links a {
+    font-variant: small-caps;
+    text-align: center;
+    color: var(--main-nav-links) !important;
+    font-size: 1rem;
+}
