@@ -17,18 +17,22 @@
     --main-nav-links: #76FF7A;
     --grey: #E6E8E6;
     --cinzel: cinzel_bold, serif;
+    --gothic: didact_gothic, sans-serif;
+    --light-link: #D6EDFF;
+    --light-link-darker: #BCC4DB;
 }
 
 body {
     background-color: #fff;
 }
 
-#custom .my-font {
-    font-family: var(--cinzel);
+#custom {
+    font-family: var(--gothic);
 }
 
-nav.main-nav {
+#custom nav.main-nav {
     background-color: var(--black) !important;
+    font-family: var(--cinzel);
 }
 
 nav.main-nav .my-nav-links a {
@@ -36,4 +40,14 @@ nav.main-nav .my-nav-links a {
     text-align: center;
     color: var(--main-nav-links) !important;
     font-size: 1rem;
+}
+
+#custom .my-link-light {
+    color: var(--light-link);
+    text-decoration: underline;
+}
+
+#custom .my-link-light:focus, #custom .my-link-light:hover {
+    color: var(--light-link-darker);
+    text-decoration: none;
 }

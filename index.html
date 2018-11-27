@@ -17,32 +17,44 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-links">
             <div class="navbar-nav my-nav-links row" style="width: 100%;">
-                <a class="nav-item nav-link my-font col" href="index.html" style="border-right: 1px solid #fff;">Home</a>
-                <a class="nav-item nav-link my-font col" href="" style="border-right: 1px solid #fff;">R&eacute;sum&eacute;</a>
-                <a class="nav-item nav-link my-font col" href="" style="border-right: 1px solid #fff;">More me</a>
-                <a class="nav-item nav-link my-font col" href="" style="border-right: 1px solid #fff;">Projects</a>
-                <a class="nav-item nav-link my-font col" href="" style="border-right: 1px solid #fff;">Blog</a>
-                <a class="nav-item nav-link my-font col" href="" style="border-right: 1px solid #fff;">Sandbox</a>
-                <a class="nav-item nav-link my-font col" href="">Contact</a>
+                <a class="nav-item nav-link col" href="index.html" style="border-right: 1px solid #fff;">Home</a>
+                <a class="nav-item nav-link col" href="#" style="border-right: 1px solid #fff;">R&eacute;sum&eacute;</a>
+                <a class="nav-item nav-link col" href="#" style="border-right: 1px solid #fff;">More me</a>
+                <a class="nav-item nav-link col" href="#" style="border-right: 1px solid #fff;">Projects</a>
+                <a class="nav-item nav-link col" href="#" style="border-right: 1px solid #fff;">Blog</a>
+                <a class="nav-item nav-link col" href="#" style="border-right: 1px solid #fff;">Sandbox</a>
+                <a class="nav-item nav-link col" href="#">Contact</a>
             </div>
         </div>
     </nav>
     
     <div class="container main-content">
         <div id="artsy-pic-bg">
-            <div class="media" style="height: 100%;">
+            <div class="my-screen"></div>
+            <div class="media" style="height: 100%; z-index: 10; position: relative;">
                 <div id="profile-pic-wrapper">
                     <img id="profile-pic" src="images/profile-pic.jpg" draggable="false" />
                 </div>
-                <div class="media-body">
-                    <h1>Hi, I'm Abe</h1>
-                    <p></p>
+                <div class="media-body" style="padding: 1.2rem 1rem 1.2rem 0; color: #fff;">
+                    <h1>Hi, I'm Abe.</h1>
+                    <p>I'm currently an undergraduate student majoring in Computer Science and Physics. I'm an aspiring computer physicist; it's a job
+                    title I coined to describe the fine line I walk between two vast and amazing disciplines. I'm always up to something new and 
+                    love a good challenge. My interests are very broad encompassing things related to mathematics and algorithms to music and literature.
+                    However, I am mainly focused on research concerning Quantum computation and AI. I hope I can properly navigate you through these stormy
+                    waters, weary traveler washing ashore on the beaches of 
+                    my little digital island. If you are an employer you can find my resume <a class="my-link-light" href="#">here</a>, 
+                    and if you are curious how I spend my leisure hours then my projects are <a class="my-link-light" href="#">here</a>.</p>
                 </div>
             </div>
         </div>
+        
+        <div class="terminal-content">
+            <h1 id="whoami">$ &#9608;</h1>
+            <p id="whoami-reply">Some text here</p>
+        </div>
     </div>
-
 </body>
 <script type="application/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="application/javascript" src="bootstrap-4.1.3/js/bootstrap.min.js"></script>
+<script type="application/javascript" src="js/home-page-script.js"></script>
 </html>
