@@ -13,16 +13,16 @@
 }
 
 :root {
-    --black: #110B11;
-    --green: #76FF7A;
-    --green-darker: #0BDA51;
+    --my-black: #110B11;
+    --my-green: #76FF7A;
+    --my-green-darker: #0BDA51;
     --cinzel: cinzel_bold, serif;
     --gothic: didact_gothic, sans-serif;
-    --yellow-link: #FDFF00;
-    --yellow-link-darker: #F8DE7E;
-    --black-link-lighter: #343434;
-    --light-link: #D6EDFF;
-    --light-link-darker: #BCC4DB;
+    --my-yellow-link: #FDFF00;
+    --my-yellow-link-darker: #F8DE7E;
+    --my-black-link-lighter: #343434;
+    --my-light-bg-link: #800000;
+    --my-light-blue: #6BBAEC;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
 }
 
 #custom nav.main-nav {
-    background-color: var(--black) !important;
+    background-color: var(--my-black) !important;
     font-family: var(--cinzel);
     padding-top: 0;
     padding-bottom: 0;
@@ -43,7 +43,7 @@ body {
 #custom nav.main-nav .my-nav-links a {
     font-variant: small-caps;
     text-align: center;
-    color: var(--green);
+    color: var(--my-green);
     font-size: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -60,22 +60,12 @@ body {
 }
 
 #custom nav.main-nav .my-nav-links a:hover, nav.main-nav .my-nav-links a:focus {
-    background-color: var(--black-link-lighter);
+    background-color: var(--my-black-link-lighter);
 }
 
 #custom nav.main-nav .my-nav-links a.active {
-    color: var(--yellow-link);
+    color: var(--my-yellow-link);
     pointer-events: none;
-}
-
-#custom .my-link-light {
-    color: var(--light-link);
-    text-decoration: underline;
-}
-
-#custom .my-link-light:focus, #custom .my-link-light:hover {
-    color: var(--light-link-darker);
-    text-decoration: none;
 }
 
 .my-footer {
@@ -86,16 +76,16 @@ body {
 }
 
 #custom .my-footer .social-media-links a {
-    color: var(--green);
+    color: var(--my-green);
     font-size: 2rem;
 }
 
 #custom .my-footer .social-media-links a:hover, #custom .my-footer .social-media-links a:focus {
-    color: var(--green-darker);
+    color: var(--my-green-darker);
 }
 
 #custom .my-footer .copyright-clause {
-    color: var(--green);
+    color: var(--my-green);
     font-size: 1rem;
     display: block;
 }

@@ -1,0 +1,62 @@
+.main-content {
+    max-width: calc(100% / 2);
+    margin: 0 auto;
+    padding: 0;
+}
+
+#custom .project {
+    margin: 1.2rem 0;
+    border-radius: 0;
+    border: 1px solid var(--my-black);
+}
+
+#custom .project-title-link {
+    color: var(--my-black);
+}
+
+#custom .project-title-link:hover, #custom .project-title-link:focus {
+    color: var(--my-light-bg-link);
+    text-decoration: underline;
+}
+
+.progress-bar-wrapper {
+    margin-bottom: 0.5rem;
+    border-radius: 0;
+}
+
+.progress-bar {
+    background-color: var(--my-light-blue);
+}
+
+.project .card-footer {
+    border-top: 1px solid var(--my-black);
+}
+
+.img-link {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.my-screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.15);
+    opacity: 0;
+    transition: opacity 0.2s ease-in 0s;
+}
+
+.project-img {
+    max-width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.img-link:hover .my-screen {
+    opacity: 1;
+}
